@@ -2,7 +2,7 @@ Summary:	A one-time password login package
 Summary(pl):	Pakiet logowania do systemu bazuj±cy na has³ach jednorazowego u¿ytku
 Name:		otpw
 Version:	1.3
-Release:	2
+Release:	3
 Epoch:		1
 License:	GPL
 Group:		Applications/System
@@ -87,12 +87,12 @@ Ten pakiet zawiera modu³ PAM dla OTPW.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_libdir}/security}
+install -d $RPM_BUILD_ROOT{%{_bindir},/lib/security}
 install -d $RPM_BUILD_ROOT%{_mandir}/{man1,man8}
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 install %{name}-gen	$RPM_BUILD_ROOT%{_bindir}
-install pam_%{name}.so	$RPM_BUILD_ROOT%{_libdir}/security
+install pam_%{name}.so	$RPM_BUILD_ROOT/lib/security
 install *%{name}*.1	$RPM_BUILD_ROOT%{_mandir}/man1
 install *%{name}*.8	$RPM_BUILD_ROOT%{_mandir}/man8
 install demo*		$RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
@@ -112,5 +112,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n pam_otpw
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/security/pam_%{name}.so
+%attr(755,root,root) /lib/security/pam_%{name}.so
 %{_mandir}/man8/*pam*.8*
