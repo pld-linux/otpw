@@ -2,7 +2,7 @@ Summary:	A one-time password login package
 Summary(pl):	Pakiet logowania do systemu bazuj±cy na has³ach jednorazowego u¿ytku
 Name:		otpw
 Version:	1.3
-Release:	3
+Release:	4
 Epoch:		1
 License:	GPL
 Group:		Applications/System
@@ -55,14 +55,14 @@ w katalogu u¿ytkownika, wiêc nie potrzebuje nigdzie ustawionego bitu suid.
 Ten pakiet zawiera przyk³adowe programy pokazuj±ce, jak integrowaæ OTPW
 z w³asnymi narzêdziami.
 
-%package -n pam_otpw
+%package -n pam-pam_otpw
 Summary:	PAM module for OTPW
 Summary(pl):	Modu³ PAM dla OTPW
 Group:		Base
 License:	GPL
 Requires:	%{name} = %{epoch}:%{version}
 
-%description -n pam_otpw
+%description -n pam-pam_otpw
 OTPW is a one-time password authentication library and PAM module that
 provides a number of advantages over other systems. OTPW uses patent-free
 RIPEMD-160 hash function to generate keys and keeps key-related information
@@ -110,7 +110,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{_examplesdir}/%{name}-%{version}
 
-%files -n pam_otpw
+%files -n pam-pam_otpw
 %defattr(644,root,root,755)
 %attr(755,root,root) /lib/security/pam_%{name}.so
 %{_mandir}/man8/*pam*.8*
