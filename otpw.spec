@@ -71,7 +71,7 @@ in user's home directory so it's no-suid.
 
 This package contains PAM module for OTPW.
 
-%description -n pam_otpw -l pl
+%description -n pam-pam_otpw -l pl
 OTPW jest bibliotek± uwierzytelniaj±c± metod± hase³ jednorazowego u¿ytku,
 wraz z opcjonalnym modu³em PAM, który pozwala prze¼roczy¶cie jej u¿ywaæ.
 OTPW u¿ywa wolnej od ograniczeñ licencyjnych funkcji skrótu RIPEMD-160
