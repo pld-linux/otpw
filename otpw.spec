@@ -2,15 +2,15 @@ Summary:	A one-time password login package
 Summary(pl):	Pakiet logowania do systemu bazuj±cy na has³ach jednorazowego u¿ytku
 Name:		otpw
 Version:	1.3
-Release:	5
+Release:	6
 Epoch:		1
 License:	GPL
 Group:		Applications/System
 Source0:	http://www.cl.cam.ac.uk/~mgk25/download/%{name}-%{version}.tar.gz
 # Source0-md5:	8e72d23714b29e450aeb50c35be67b55
 URL:		http://www.cl.cam.ac.uk/~mgk25/otpw.html
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildRequires:	pam-devel
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 OTPW is a one-time password authentication library and PAM module that
@@ -86,17 +86,16 @@ Ten pakiet zawiera modu³ PAM dla OTPW.
 %build
 %{__make} \
 	CC="%{__cc}" \
-	CFLAGS="%{rpmcflags} -Wall -fPIC" \
-	DESTDIR="$RPM_BUILD_ROOT"
+	CFLAGS="%{rpmcflags} -Wall -fPIC"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},/lib/security}
+install -d $RPM_BUILD_ROOT{%{_bindir},/%{_lib}/security}
 install -d $RPM_BUILD_ROOT%{_mandir}/{man1,man8}
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 install %{name}-gen	$RPM_BUILD_ROOT%{_bindir}
-install pam_%{name}.so	$RPM_BUILD_ROOT/lib/security
+install pam_%{name}.so	$RPM_BUILD_ROOT/%{_lib}/security
 install *%{name}*.1	$RPM_BUILD_ROOT%{_mandir}/man1
 install *%{name}*.8	$RPM_BUILD_ROOT%{_mandir}/man8
 install demo*		$RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
@@ -116,5 +115,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n pam-pam_otpw
 %defattr(644,root,root,755)
-%attr(755,root,root) /lib/security/pam_%{name}.so
+%attr(755,root,root) /%{_lib}/security/pam_%{name}.so
 %{_mandir}/man8/*pam*.8*
