@@ -2,7 +2,7 @@ Summary:	A one-time password login package
 Summary(pl):	Pakiet logowania do systemu bazuj±cy na has³ach jednorazowego u¿ytku
 Name:		otpw
 Version:	1.3
-Release:	1
+Release:	2
 Epoch:		1
 License:	GPL
 Group:		Applications/System
@@ -34,7 +34,7 @@ Summary:	OTPW - example programs
 Summary(pl):	OTPW - programy przyk³adowe
 Group:		Development/Libraries
 License:	GPL
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{epoch}:%{version}
 
 %description examples
 OTPW is a one-time password authentication library and PAM module that
@@ -60,7 +60,7 @@ Summary:	PAM module for OTPW
 Summary(pl):	Modu³ PAM dla OTPW
 Group:		Base
 License:	GPL
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{epoch}:%{version}
 
 %description -n pam_otpw
 OTPW is a one-time password authentication library and PAM module that
