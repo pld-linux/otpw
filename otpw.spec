@@ -27,7 +27,7 @@ OTPW u¿ywa wolnej od ograniczeñ licencyjnych funkcji skrótu RIPEMD-160
 do generowania kluczy, a tak¿e przechowuje informacje zwi±zane z kluczem
 w katalogu u¿ytkownika, wiêc nie potrzebuje nigdzie ustawionego bitu suid.
 
-Ten pakiet zawiera programy binarne potrzebne do dzia³ania OTWP.
+Ten pakiet zawiera programy binarne potrzebne do dzia³ania OTPW.
 
 %package examples
 Summary:	OTPW - example programs
