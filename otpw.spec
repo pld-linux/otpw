@@ -14,7 +14,7 @@ BuildRequires:	pam-devel
 
 %description
 OTPW is a one-time password authentication library and PAM module that
-provides a number of advantages over other systems. OTPW uses license-free
+provides a number of advantages over other systems. OTPW uses patent-free
 RIPEMD-160 hash function to generate keys and keeps key-related information
 in user's home directory so it's no-suid.
 
@@ -38,7 +38,7 @@ Requires:	%{name} = %{version}
 
 %description examples
 OTPW is a one-time password authentication library and PAM module that
-provides a number of advantages over other systems. OTPW uses license-free
+provides a number of advantages over other systems. OTPW uses patent-free
 RIPEMD-160 hash function to generate keys and keeps key-related information
 in user's home directory so it's no-suid.
 
@@ -64,7 +64,7 @@ Requires:	%{name} = %{version}
 
 %description -n pam_otpw
 OTPW is a one-time password authentication library and PAM module that
-provides a number of advantages over other systems. OTPW uses license-free
+provides a number of advantages over other systems. OTPW uses patent-free
 RIPEMD-160 hash function to generate keys and keeps key-related information
 in user's home directory so it's no-suid.
 
