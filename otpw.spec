@@ -61,6 +61,7 @@ Summary(pl):	Modu³ PAM dla OTPW
 Group:		Base
 License:	GPL
 Requires:	%{name} = %{epoch}:%{version}
+Obsoletes:	pam_otpw
 
 %description -n pam-pam_otpw
 OTPW is a one-time password authentication library and PAM module that
