@@ -2,7 +2,7 @@ Summary:	A one-time password login package
 Summary(pl):	Pakiet logowania do systemu bazuj±cy na has³ach jednorazowego u¿ytku
 Name:		otpw
 Version:	1.3
-Release:	4
+Release:	5
 Epoch:		1
 License:	GPL
 Group:		Applications/System
