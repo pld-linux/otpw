@@ -86,7 +86,7 @@ Ten pakiet zawiera modu³ PAM dla OTPW.
 %build
 %{__make} \
 	CC="%{__cc}" \
-	CFLAGS="%{rpmcflags} -Wall" \
+	CFLAGS="%{rpmcflags} -Wall -fPIC" \
 	DESTDIR="$RPM_BUILD_ROOT"
 
 %install
