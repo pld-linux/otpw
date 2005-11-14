@@ -22,7 +22,7 @@ This package contains binary programs needed by OTPW to work.
 
 %description -l pl
 OTPW jest bibliotek± uwierzytelniaj±c± metod± hase³ jednorazowego u¿ytku,
-wraz z opcjonalnym modu³em PAM, który pozwala prze¼roczy¶cie jej u¿ywaæ.
+wraz z opcjonalnym modu³em PAM, który pozwala przezroczy¶cie jej u¿ywaæ.
 OTPW u¿ywa wolnej od ograniczeñ licencyjnych funkcji skrótu RIPEMD-160
 do generowania kluczy, a tak¿e przechowuje informacje zwi±zane z kluczem
 w katalogu u¿ytkownika, wiêc nie potrzebuje nigdzie ustawionego bitu suid.
@@ -47,7 +47,7 @@ OTPW with own tools.
 
 %description examples -l pl
 OTPW jest bibliotek± uwierzytelniaj±c± metod± hase³ jednorazowego u¿ytku,
-wraz z opcjonalnym modu³em PAM, który pozwala prze¼roczy¶cie jej u¿ywaæ.
+wraz z opcjonalnym modu³em PAM, który pozwala przezroczy¶cie jej u¿ywaæ.
 OTPW u¿ywa wolnej od ograniczeñ licencyjnych funkcji skrótu RIPEMD-160
 do generowania kluczy, a tak¿e przechowuje informacje zwi±zane z kluczem
 w katalogu u¿ytkownika, wiêc nie potrzebuje nigdzie ustawionego bitu suid.
@@ -73,7 +73,7 @@ This package contains PAM module for OTPW.
 
 %description -n pam-pam_otpw -l pl
 OTPW jest bibliotek± uwierzytelniaj±c± metod± hase³ jednorazowego u¿ytku,
-wraz z opcjonalnym modu³em PAM, który pozwala prze¼roczy¶cie jej u¿ywaæ.
+wraz z opcjonalnym modu³em PAM, który pozwala przezroczy¶cie jej u¿ywaæ.
 OTPW u¿ywa wolnej od ograniczeñ licencyjnych funkcji skrótu RIPEMD-160
 do generowania kluczy, a tak¿e przechowuje informacje zwi±zane z kluczem
 w katalogu u¿ytkownika, wiêc nie potrzebuje nigdzie ustawionego bitu suid.
