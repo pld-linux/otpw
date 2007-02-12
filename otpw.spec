@@ -1,5 +1,5 @@
 Summary:	A one-time password login package
-Summary(pl):	Pakiet logowania do systemu bazuj±cy na has³ach jednorazowego u¿ytku
+Summary(pl.UTF-8):   Pakiet logowania do systemu bazujÄ…cy na hasÅ‚ach jednorazowego uÅ¼ytku
 Name:		otpw
 Version:	1.3
 Release:	6
@@ -20,18 +20,18 @@ in user's home directory so it's no-suid.
 
 This package contains binary programs needed by OTPW to work.
 
-%description -l pl
-OTPW jest bibliotek± uwierzytelniaj±c± metod± hase³ jednorazowego u¿ytku,
-wraz z opcjonalnym modu³em PAM, który pozwala przezroczy¶cie jej u¿ywaæ.
-OTPW u¿ywa wolnej od ograniczeñ licencyjnych funkcji skrótu RIPEMD-160
-do generowania kluczy, a tak¿e przechowuje informacje zwi±zane z kluczem
-w katalogu u¿ytkownika, wiêc nie potrzebuje nigdzie ustawionego bitu suid.
+%description -l pl.UTF-8
+OTPW jest bibliotekÄ… uwierzytelniajÄ…cÄ… metodÄ… haseÅ‚ jednorazowego uÅ¼ytku,
+wraz z opcjonalnym moduÅ‚em PAM, ktÃ³ry pozwala przezroczyÅ›cie jej uÅ¼ywaÄ‡.
+OTPW uÅ¼ywa wolnej od ograniczeÅ„ licencyjnych funkcji skrÃ³tu RIPEMD-160
+do generowania kluczy, a takÅ¼e przechowuje informacje zwiÄ…zane z kluczem
+w katalogu uÅ¼ytkownika, wiÄ™c nie potrzebuje nigdzie ustawionego bitu suid.
 
-Ten pakiet zawiera programy binarne potrzebne do dzia³ania OTPW.
+Ten pakiet zawiera programy binarne potrzebne do dziaÅ‚ania OTPW.
 
 %package examples
 Summary:	OTPW - example programs
-Summary(pl):	OTPW - programy przyk³adowe
+Summary(pl.UTF-8):   OTPW - programy przykÅ‚adowe
 Group:		Development/Libraries
 License:	GPL
 Requires:	%{name} = %{epoch}:%{version}
@@ -45,19 +45,19 @@ in user's home directory so it's no-suid.
 This package contains example programs, which shows how to integrate
 OTPW with own tools.
 
-%description examples -l pl
-OTPW jest bibliotek± uwierzytelniaj±c± metod± hase³ jednorazowego u¿ytku,
-wraz z opcjonalnym modu³em PAM, który pozwala przezroczy¶cie jej u¿ywaæ.
-OTPW u¿ywa wolnej od ograniczeñ licencyjnych funkcji skrótu RIPEMD-160
-do generowania kluczy, a tak¿e przechowuje informacje zwi±zane z kluczem
-w katalogu u¿ytkownika, wiêc nie potrzebuje nigdzie ustawionego bitu suid.
+%description examples -l pl.UTF-8
+OTPW jest bibliotekÄ… uwierzytelniajÄ…cÄ… metodÄ… haseÅ‚ jednorazowego uÅ¼ytku,
+wraz z opcjonalnym moduÅ‚em PAM, ktÃ³ry pozwala przezroczyÅ›cie jej uÅ¼ywaÄ‡.
+OTPW uÅ¼ywa wolnej od ograniczeÅ„ licencyjnych funkcji skrÃ³tu RIPEMD-160
+do generowania kluczy, a takÅ¼e przechowuje informacje zwiÄ…zane z kluczem
+w katalogu uÅ¼ytkownika, wiÄ™c nie potrzebuje nigdzie ustawionego bitu suid.
 
-Ten pakiet zawiera przyk³adowe programy pokazuj±ce, jak integrowaæ OTPW
-z w³asnymi narzêdziami.
+Ten pakiet zawiera przykÅ‚adowe programy pokazujÄ…ce, jak integrowaÄ‡ OTPW
+z wÅ‚asnymi narzÄ™dziami.
 
 %package -n pam-pam_otpw
 Summary:	PAM module for OTPW
-Summary(pl):	Modu³ PAM dla OTPW
+Summary(pl.UTF-8):   ModuÅ‚ PAM dla OTPW
 Group:		Base
 License:	GPL
 Requires:	%{name} = %{epoch}:%{version}
@@ -71,14 +71,14 @@ in user's home directory so it's no-suid.
 
 This package contains PAM module for OTPW.
 
-%description -n pam-pam_otpw -l pl
-OTPW jest bibliotek± uwierzytelniaj±c± metod± hase³ jednorazowego u¿ytku,
-wraz z opcjonalnym modu³em PAM, który pozwala przezroczy¶cie jej u¿ywaæ.
-OTPW u¿ywa wolnej od ograniczeñ licencyjnych funkcji skrótu RIPEMD-160
-do generowania kluczy, a tak¿e przechowuje informacje zwi±zane z kluczem
-w katalogu u¿ytkownika, wiêc nie potrzebuje nigdzie ustawionego bitu suid.
+%description -n pam-pam_otpw -l pl.UTF-8
+OTPW jest bibliotekÄ… uwierzytelniajÄ…cÄ… metodÄ… haseÅ‚ jednorazowego uÅ¼ytku,
+wraz z opcjonalnym moduÅ‚em PAM, ktÃ³ry pozwala przezroczyÅ›cie jej uÅ¼ywaÄ‡.
+OTPW uÅ¼ywa wolnej od ograniczeÅ„ licencyjnych funkcji skrÃ³tu RIPEMD-160
+do generowania kluczy, a takÅ¼e przechowuje informacje zwiÄ…zane z kluczem
+w katalogu uÅ¼ytkownika, wiÄ™c nie potrzebuje nigdzie ustawionego bitu suid.
 
-Ten pakiet zawiera modu³ PAM dla OTPW.
+Ten pakiet zawiera moduÅ‚ PAM dla OTPW.
 
 %prep
 %setup -q -n %{name}
