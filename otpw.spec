@@ -1,5 +1,5 @@
 Summary:	A one-time password login package
-Summary(pl.UTF-8):   Pakiet logowania do systemu bazujący na hasłach jednorazowego użytku
+Summary(pl.UTF-8):	Pakiet logowania do systemu bazujący na hasłach jednorazowego użytku
 Name:		otpw
 Version:	1.3
 Release:	6
@@ -31,7 +31,7 @@ Ten pakiet zawiera programy binarne potrzebne do działania OTPW.
 
 %package examples
 Summary:	OTPW - example programs
-Summary(pl.UTF-8):   OTPW - programy przykładowe
+Summary(pl.UTF-8):	OTPW - programy przykładowe
 Group:		Development/Libraries
 License:	GPL
 Requires:	%{name} = %{epoch}:%{version}
@@ -57,7 +57,7 @@ z własnymi narzędziami.
 
 %package -n pam-pam_otpw
 Summary:	PAM module for OTPW
-Summary(pl.UTF-8):   Moduł PAM dla OTPW
+Summary(pl.UTF-8):	Moduł PAM dla OTPW
 Group:		Base
 License:	GPL
 Requires:	%{name} = %{epoch}:%{version}
