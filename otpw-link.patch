@@ -1,0 +1,19 @@
+--- otpw-1.5/Makefile.orig	2014-08-07 21:21:15.000000000 +0200
++++ otpw-1.5/Makefile	2014-11-16 18:29:13.395697098 +0100
+@@ -8,6 +8,7 @@
+ 
+ CC=gcc
+ CFLAGS=-O -ggdb -W -Wall -Wno-unused-result -fPIC
++LD=$(CC)
+ 
+ %.gz: %
+ 	gzip -9c $< >$@
+@@ -28,7 +29,7 @@
+ otpw-l.o: otpw-l.c otpw.c otpw.h md.h
+ pam_otpw.o: pam_otpw.c otpw.h md.h
+ pam_otpw.so: pam_otpw.o otpw-l.o rmd160.o md.o
+-	ld --shared -o $@ $+ -lcrypt -lpam -lpam_misc
++	$(LD) --shared -o $@ $+ -lcrypt -lpam -lpam_misc
+ 
+ distribution:
+ 	git archive --prefix otpw-$(VERSION)/ -o otpw-$(VERSION).tar.gz v$(VERSION)
